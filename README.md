@@ -1,6 +1,8 @@
 # DevOps Project Ideas
 
-[![license](https://img.shields.io/github/license/t-ho/mern-stack)](https://gitlab.com/calvin-puram/product-store/-/blob/master/LICENSE)
+[![license](https://img.shields.io/github/license/t-ho/mern-stack)](https://github.com/calvin-puram/DevOps-Project-Ideas/blob/master/LICENSE)
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ![DevOps Project Ideas](headline.png)
 
