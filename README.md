@@ -124,9 +124,9 @@ Useful resources:
 </details>
 
 <details>
-<summary><b>case study - deploy a full stack application</b></summary><br>
+<summary><b>case study - deploy a full stack application (with high availability)</b></summary><br>
 
-In this case study, you will configure and serve a full stack application using any web server of your choice and install SSL/TLS certificate to load application over HTTPS. You can use any available open source full stack application (Nodejs/Reactjs, django/vuejs or any stack o your choice) for this task and Knowledge of any of these technologies is not required.
+High availability applications are typically deployed so that even if one instance of the app crashes, users can still access it. In this case study, you will configure and serve a full stack application using any web server of your choice and install SSL/TLS certificate to load application over HTTPS. You can use any available open source full stack application (Nodejs/Reactjs, django/vuejs or any stack o your choice) for this task and Knowledge of any of these technologies is not required.
 
 ### This project helps with these job requirements:
 
@@ -134,7 +134,9 @@ In this case study, you will configure and serve a full stack application using 
 
 ✅ Configuration and managing databases such as MySQL, Mongo.
 
-✅ Working knowledge of various tools, open-source technologies, and cloud services.
+✅ Build infrastructure as code and implement and test the automation.
+
+✅ Manage software configuration across environments using configuration-as-code principles.
 
 ### Steps to take:
 
@@ -142,13 +144,17 @@ In this case study, you will configure and serve a full stack application using 
 
 ⏺ You can use any cloud provider to create (provision) a virtual machine.
 
-⏺ Install Nginx on the virtual machine and configure Nginx to serve a static website.
+⏺ Determine how to automate the requirement of database credentials to the application.
 
-⏺ Database configuration and management
+⏺ Deploy a second instance of the application that points to the same database as the first. Consider high-availability and deploy on two or more availability zones.
 
-⏺ Configuring Nginx as a reverse proxy
+⏺ Add a load balancer or reverse proxy to load-balance requests between the two instances so that you may access the application through a single URL.
 
-⏺ DNS configuration
+⏺ Using Ansible Vault, store the database credentials in an encrypted format. Get the credentials from Vault when you're ready to deploy.
+
+⏺ In a 'dev' or 'test' environment, deploy a separate, single instance of the application.
+
+⏺ Create a cron job to perform database backups.
 
 ⏺ Check that you can access the frontend using your web browser which integrate with your backend eg (https://example.com).
 
@@ -200,5 +206,45 @@ Useful resources:
 - [How to Build an Effective Initial Deployment Pipeline](https://www.toptal.com/devops/effective-ci-cd-deployment-pipeline)
 - [Deploy your App Using CI/CD Pipeline](https://medium.com/wind-of-change/creating-a-ci-cd-pipeline-6ff9aeb0848c)
 - [CI/CD Pipeline: A Gentle Introduction](https://semaphoreci.com/blog/cicd-pipeline)
+
+</details>
+
+<details>
+<summary><b>case study - set up dashboards for monitoring applications</b></summary><br>
+
+As a DevOps engineer, you add monitoring to an application by creating a dashboard. In this case study, you will create dashboards to provide end-to-end monitoring of an application. The application is critical to the running of the business. You create two dashboards to achieve this goal:
+
+- One dashboard monitors the metrics that reflect the health of the supporting infrastructure.
+- The other dashboard provides a summary alert that tells you when problems occur in the infrastructure.
+
+### This project helps with these job requirements:
+
+✅ Implement technologies to increase our apps' traceability and performance monitoring.
+
+✅ Profile and optimize architecture and infrastructure with the development team..
+
+### Steps to take:
+
+⏺ You can use the application you deploy from previous case study.
+
+⏺ Choose one of the many open source monitoring programs available. Alternatively, you can utilize the one given by your cloud provider (e.g. AWS CloudWatch, Azure Monitor ).
+
+⏺ Configure the application to expose some metrics in order to demonstrate its health. Investigate which metrics the application can expose; for example, if it's a web server, can metrics like requests-per-second or memory usage be exposed?
+
+⏺ The metrics should be scraped into a monitoring tool.
+
+⏺ Create a dashboard to show the metrics in real time.
+
+⏺ Monitor storage space, system load, and other aspects of your underlying infrastructure.
+
+⏺ To increase the strain on your application, use a load testing tool. What impact does it have on the dashboard's metrics?
+
+### Goals of the Project:
+
+This project will get you up to speed to various monitoring tools like (Nagios, Statsd, Prometheus, Graphite, Grafana e.t.c) you will also get to know how to gather metrics, and inject them into the tool.
+
+Useful resources:
+
+- [How we monitor the health of our applications and infrastructure](https://medium.com/kaodim-engineering/monitoring-app-infra-64768c79ab37)
 
 </details>
