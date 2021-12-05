@@ -51,7 +51,7 @@ These projects cannot be completed using web consoles or point-and-click methods
 Majority of these tasks will take several hours to perform. If you're new to DevOps, it could take hours or even days. When you're done, you'll have some code that you can push to a Git repository and share with prospective employers! Please don't give up. Everyone must begin somewhere. Best of luck!
 
 <details>
-<summary><b>case study - deploy a static sites</b></summary><br>
+<summary><b>case study - Deploy a static sites</b></summary><br>
 
 Imagine a startup called **risewise** build a landing page to showcase their services and they need a DevOps engineer to provision a web server with automation and publish a website onto it. In this case study, you will configure and serve a static HTML site using Nginx and install SSL/TLS certificate to load application over HTTPS.
 
@@ -93,7 +93,7 @@ Useful resources:
 </details>
 
 <details>
-<summary><b>case study - deploy a single page application</b></summary><br>
+<summary><b>case study - Deploy a single page application</b></summary><br>
 
 **ngcruse** a fictitious company needs the help of a DevOps engineer to provision a web server with automation and publish a website onto it. In this case study, you will configure and serve a single page application (reactjs, vuejs or any spa will be fine) using Nginx and install SSL/TLS certificate to load application over HTTPS. You can use any available open source single page application for this task.
 
@@ -124,7 +124,7 @@ Useful resources:
 </details>
 
 <details>
-<summary><b>case study - deploy a full stack application (with high availability)</b></summary><br>
+<summary><b>case study - Deploy a full stack application (with high availability)</b></summary><br>
 
 High availability applications are typically deployed so that even if one instance of the app crashes, users can still access it. In this case study, you will configure and serve a full stack application using any web server of your choice and install SSL/TLS certificate to load application over HTTPS. You can use any available open source full stack application (Nodejs/Reactjs, django/vuejs or any stack o your choice) for this task and Knowledge of any of these technologies is not required.
 
@@ -169,7 +169,7 @@ Useful resources:
 </details>
 
 <details>
-<summary><b>case study - set up CI/CD pipeline for an application</b></summary><br>
+<summary><b>case study - Set up CI/CD pipeline for an application</b></summary><br>
 
 The primary goal of a CI/CD pipeline is to automate the software development lifecycle (SDLC). The pipeline will cover many aspects of a software development process, from writing the code and running tests to delivery and deployment. Simply stated, a CI/CD pipeline integrates automation and continuous monitoring into the development lifecycle.
 
@@ -210,7 +210,7 @@ Useful resources:
 </details>
 
 <details>
-<summary><b>case study - set up dashboards for monitoring applications</b></summary><br>
+<summary><b>case study - Set up dashboards for monitoring applications</b></summary><br>
 
 As a DevOps engineer, you add monitoring to an application by creating a dashboard. In this case study, you will create dashboards to provide end-to-end monitoring of an application. The application is critical to the running of the business. You create two dashboards to achieve this goal:
 
@@ -246,5 +246,72 @@ This project will get you up to speed to various monitoring tools like (Nagios, 
 Useful resources:
 
 - [How we monitor the health of our applications and infrastructure](https://medium.com/kaodim-engineering/monitoring-app-infra-64768c79ab37)
+
+</details>
+
+<details>
+<summary><b>case study - Deploy a containerised full stack application</b></summary><br>
+
+In this case study, try creating a container image for an application and running it with a container engine or deploying it to a container service or PAAS.
+
+### This project helps with these job requirements:
+
+✅ Knowledge of containerization technologies such as Docker.
+
+✅ Technical knowledge of virtualization and container architectures.
+
+### Steps to take:
+
+⏺ You can use any open source application on Github.
+
+⏺ Setup a pipeline that creates a container image for the application and uploads it to a registry e.g. Docker Hub, Amazon ECR, self-hosted Nexus container registry.
+
+⏺ Use a container engine such as Amazon ECS or Kubernetes to run the container image.
+
+⏺ Deploy two instances of the container and balance the load between them.
+
+⏺ Use an orchestration tool, such as Docker Compose, to guarantee that containers are resumed automatically whenever they are stopped.
+
+⏺ Try to deploy the containers onto Kubernetes.
+
+### Goals of the Project:
+
+You'll now have to learn about containers, as well as how to create and run them as part of a pipeline. You'll also need to be familiar with container image registries, such as Amazon Elastic Container Registry, in order to push an image. Lastly, the container will be executed on a server or container engine.
+
+Useful resources:
+
+- [Full stack application deployment using Docker ](https://www.linkedin.com/pulse/full-stack-application-deployment-using-docker-part-rabbani/)
+- [Build and Dockerize a Full-stack React app with Node.js, MySQL and Nginx](https://www.section.io/engineering-education/build-and-dockerize-a-full-stack-react-app-with-nodejs-and-nginx/)
+
+</details>
+
+<details>
+<summary><b>case study - Deploy a microservice application unto kubernetes</b></summary><br>
+
+In this case study, try deploying an existing microservice to kubernetes. Package the app into a container and deploy it to Kubernetes.
+
+### This project helps with these job requirements:
+
+✅ Knowledge of containerization technologies such as Docker.
+
+✅ Technical knowledge of virtualization and container architectures.
+
+### Steps to take:
+
+⏺ You can use any open source microservice application on Github or Write a basic application.
+
+⏺ Setup a build pipeline in your preferred CI/CD tool (e.g., Jenkins, GitLab, etc.) and save it to the repository (pipeline-as-code)
+
+⏺ Automate the creation of an kubernetes cluster using Terraform.
+
+### Goals of the Project:
+
+You'll now have to learn about kubernetes, as well as how to create a kubernetes cluster.
+
+Useful resources:
+
+- [Build and deploy a microservice with Kubernetes](https://searchitoperations.techtarget.com/tutorial/Build-and-deploy-a-microservice-with-Kubernetes)
+- [How to Deploy Your Application or Microservice on Kubernetes](https://www.digitalocean.com/community/tech_talks/how-to-deploy-your-application-or-microservice-as-a-kubernetes-deployment)
+- [Automate Provisioning of Kubernetes Clusters on AWS with Terraform](https://faun.pub/automate-provisioning-of-kubernetes-clusters-on-aws-with-terraform-61ff6aaf8ead)
 
 </details>
